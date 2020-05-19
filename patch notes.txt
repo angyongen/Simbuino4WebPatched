@@ -1,0 +1,25 @@
+#1
+USART.js: line 50 typo
+Original: UCSR0A.set(UCSR0A.get() | (1 << AtmelIO.TXC0));
+New: this.UCSR0A.set(this.UCSR0A.get() | (1 << AtmelIO.TXC0));
+
+#2
+Index.html: Added resume audiocontext button
+Audioplayer.js: Added "One-liner to resume playback when user interacted with the page."
+The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page.
+https://goo.gl/7K7WLu
+ctor @ AudioPlayer.js.download:14
+
+https://developers.google.com/web/updates/2017/09/autoplay-policy-changes#webaudio
+
+#3
+Index.html: Changed name of css file
+[Deprecation] CSS cannot be loaded from `file:` URLs unless they end in a `.css` file extension.
+
+
+#4 
+USART.js : added serial logging
+
+#5
+Index.html: layout changes to shrink page size and add serial console
+Simulation.js: added reset console

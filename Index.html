@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://simbuino4web.ppl-pilot.com/ -->
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width">
+    <title>Index</title>
+    <link href="./Index_files/css.css" rel="stylesheet">
+
+    <script src="./Index_files/modernizr"></script>
+
+</head>
+<body>
+    
+
+<h2>Simbuino4Web - Experimental HTML5 <a href="http://gamebuino.com/">Gamebuino</a> emulator.</h2>
+<div>Developed by Mark Feldman (aka <a href="http://gamebuino.com/forum/ucp.php?i=pm&amp;mode=compose&amp;u=117">"Myndale" on the Gamebuino Forum</a>).</div>
+
+
+<div class="outer">
+  <div class="inner" style="width:630px">
+	  <table>
+		  <tbody>
+          <tr>
+          <td>
+            <canvas id="canvas" tabindex="1" width="84" height="48" style="width:315px;height:180px;image-rendering:pixelated"></canvas>
+          </td>
+          <td>
+            <textarea id="serial" style="font-family:Lucida Console;width:315px;height:180px;margin-top:20px;"></textarea>
+          </td>
+          </tr>
+          <tr>
+			  <td style="width:315px">
+				  <button id="reset">Reset</button>
+				  <button id="loader">Loader</button>
+				  <button id="unmute">Unmute audio</button>
+			  </td>
+			  <td style="width:315px">
+				  <div id="fps" align="right">62 fps</div>
+			  </td>
+		  </tr>
+	  </tbody></table>
+	  
+  </div>
+</div>
+
+<div class="outer">
+  <div class="inner">
+	  <div>Load a .HEX game file: <input type="file" id="hexInput"></div>
+	  <div>SD Card .IMG file: <input type="file" id="imgInput"></div>
+	  <div>Click on the game panel if the controls become unresponsive.</div>
+	  <div>Key Mappings: ESDF=arrows, K=A button, L=B button, R=C button</div>
+	  <div id="error"></div>
+  </div>
+</div>
+
+
+
+
+    <script src="./Index_files/jquery"></script>
+
+    
+
+	<script type="text/javascript" src="./Index_files/class.js"></script>	
+
+	<!-- Oh look, I've added my Arduino emulator code as-is, comments and all. Aren't you lucky? ;) -->
+	<script type="text/javascript" src="./Index_files/Deltas.js"></script>	
+	<script type="text/javascript" src="./Index_files/MemoryMappedRegister.js"></script>
+	<script type="text/javascript" src="./Index_files/AtmelRegisters.js"></script>
+	<script type="text/javascript" src="./Index_files/FlagsRegister.js"></script>
+	<script type="text/javascript" src="./Index_files/PortRegister.js"></script>
+	<script type="text/javascript" src="./Index_files/AtmelIO.js"></script>
+	<script type="text/javascript" src="./Index_files/AtmelContext.js"></script>
+	<script type="text/javascript" src="./Index_files/AtmelProcessor.js"></script>
+	<script type="text/javascript" src="./Index_files/ADC.js"></script>
+	<script type="text/javascript" src="./Index_files/Buttons.js"></script>
+	<script type="text/javascript" src="./Index_files/SPI.js"></script>
+	<script type="text/javascript" src="./Index_files/USART.js"></script>
+	<script type="text/javascript" src="./Index_files/EEPROM.js"></script>
+	<script type="text/javascript" src="./Index_files/Lcd.js"></script>
+	<script type="text/javascript" src="./Index_files/SdDevice.js"></script>
+	<script type="text/javascript" src="./Index_files/AudioPlayer.js"></script>
+	<script type="text/javascript" src="./Index_files/HexDecoder.js"></script>
+	<script type="text/javascript" src="./Index_files/Bootloader.js"></script>
+	<script type="text/javascript" src="./Index_files/Loader.js"></script>
+	<script type="text/javascript" src="./Index_files/Simulation.js"></script>
+
+
+
+</body></html>
